@@ -7,7 +7,10 @@
             List<Shape> shapes = new List<Shape>{
             new Circle(5),
             new Rectangle(2, 5),
-            new Triangle(3, 7)};
+            new Triangle(3, 7),
+            new Square(2),
+            new Rhombus(4, 60)
+            };
 
             foreach (Shape shape in shapes)
             {
@@ -31,12 +34,15 @@
                     shapes3d.Add(new Pyramid(triangle, 5));
                 }
             }
+            shapes3d.Add(new Rhombohedron(new Rhombus(4, 30), 30));
+            shapes3d.Add(new Cuboid(new Rectangle(4, 4), 2));
             foreach (Shape3D shape3d in shapes3d)
             {
                 Console.WriteLine(shape3d.GetType().Name + " with " +
                 shape3d.BaseShape.GetType().Name + " base | Volume = " +
                 shape3d.CalculateVolume());
             }
+            
         }
     }
 }
