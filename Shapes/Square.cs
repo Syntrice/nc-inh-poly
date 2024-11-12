@@ -8,7 +8,7 @@ namespace Shapes
 {
     public class Square : Rectangle
     {
-        public double Size { get; set; }
+        public double Size { get; }
         public Square(double size) : base(size, size)
         {
             Size = size;

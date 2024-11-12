@@ -8,9 +8,9 @@ namespace Vehicles
 {
     internal abstract class Engine
     {
-        public bool Running { get; set; }
-        public int Horsepower { get; set; }
-        public FuelType FuelType { get; set; }
+        public bool Running { get; private set; }
+        public int Horsepower { get; }
+        public FuelType FuelType { get; }
 
         public Engine(int horsepower, FuelType fuelType)
         {

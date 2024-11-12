@@ -9,7 +9,7 @@ namespace Shapes
 {
     public abstract class Shape3D
     {
-        public Shape BaseShape { get; set; }
+        public Shape BaseShape { get; }
 
         public Shape3D(Shape baseShape)
         {

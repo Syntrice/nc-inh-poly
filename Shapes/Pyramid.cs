@@ -8,7 +8,7 @@ namespace Shapes
 {
     public class Pyramid : Shape3D
     {
-        public double Height { get; set; }
+        public double Height { get; }
 
         public Pyramid(Triangle triangle, double height) : base(triangle)
         {

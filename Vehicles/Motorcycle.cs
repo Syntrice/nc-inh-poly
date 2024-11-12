@@ -13,7 +13,7 @@ namespace Vehicles
             HasSidecar = hasSidecar;
         }
 
-        public bool HasSidecar { get; set; }
+        public bool HasSidecar { get; private set; }
 
         public override void Accelerate()
         {
@@ -34,6 +34,15 @@ namespace Vehicles
         public override void SwapEngine(int horsepower, FuelType fuelType)
         {
             EngineType = new MotorcycleEngine(horsepower, fuelType);
+        }
+
+        public void AttatchSideCar()
+        {
+            HasSidecar = true;
+        }
+        public void DettatchSideCar()
+        {
+            HasSidecar = false;
         }
     }
 }

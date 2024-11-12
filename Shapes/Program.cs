@@ -26,6 +26,7 @@
                     shapes3d.Add(new Sphere(circle));
                     shapes3d.Add(new Cylinder(circle, 5));
                     shapes3d.Add(new Cone(circle, 5));
+                    shapes3d.Add(new Prism(circle, 5));
                 }
                 else if (shape is Triangle triangle)
                 {

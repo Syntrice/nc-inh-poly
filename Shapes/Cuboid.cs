@@ -8,7 +8,7 @@ namespace Shapes
 {
     public class Cuboid : Shape3D
     {
-        public double Height {  get; set; }
+        public double Height {  get; }
 
         public Cuboid(Rectangle rectangle, double height) : base(rectangle)
         {

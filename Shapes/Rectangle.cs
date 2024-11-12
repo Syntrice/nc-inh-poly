@@ -9,8 +9,8 @@ namespace Shapes
     public class Rectangle : Shape
     {
 
-        public double Length { get; set; }
-        public double Width { get; set; }
+        public double Length { get; }
+        public double Width { get; }
 
         public Rectangle(double length, double width)
         {

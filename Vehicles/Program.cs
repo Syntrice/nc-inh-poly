@@ -15,6 +15,7 @@
             bicycle1.StartEngine();
             bicycle2.StartEngine();
 
+            bicycle1.AttatchSideCar();
             bicycle1.Drive();
             bicycle2.Drive();
 

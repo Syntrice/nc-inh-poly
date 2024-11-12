@@ -9,7 +9,7 @@ namespace Shapes
     public class Circle : Shape
     {
 
-        public double Radius { get; set; }
+        public double Radius { get; }
 
         public Circle(double radius)
         {
