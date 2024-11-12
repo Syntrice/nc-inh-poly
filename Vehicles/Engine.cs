@@ -21,6 +21,7 @@ namespace Vehicles
         public void Start()
         {
             Running = true;
+            Console.WriteLine("Engine is running");
         }
     }
 

@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Shapes;
+
 
 namespace Vehicles
 {
     internal abstract class Vehicle
     {
-        public Engine EngineType {  get; set; }
 
-        public string MakeName { get; set; }
-        public string Model {  get; set; }
-        public int Speed { get; set; }
+        public Engine EngineType { get; protected set; }
+
+        public string MakeName { get; }
+        public string Model {  get; }
+
+        public int Speed { get; }
+
+        public List<Shape> ComponentShapes { get; set; }
 
         public Vehicle(string model, string makeName, Engine engineType)
         {
@@ -26,6 +27,8 @@ namespace Vehicles
             EngineType.Start();
         }
 
+        public abstract void SwapEngine(int horsepower, FuelType fuelType);
+
         public void Drive()
         {
             if (EngineType.Running)
@@ -38,7 +41,7 @@ namespace Vehicles
             }
         }
 
-        public abstract void Accelerate();
+        public abstract void Accelerate(); 
 
 
     }

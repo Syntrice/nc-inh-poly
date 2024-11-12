@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Rhombus : Square
+    public class Rhombus : Square
     {
         public double Angle1 { get; }
         public double Angle2 { get; }
@@ -14,7 +14,7 @@ namespace Shapes
         public Rhombus(double size, double angle1) : base(size)
         {
 
-            Math.Clamp(angle1, 0.01, 179.99);
+            Math.Clamp(angle1, 0, 180);
             Angle1 = angle1;
             Angle2 = 180 - angle1;
         }

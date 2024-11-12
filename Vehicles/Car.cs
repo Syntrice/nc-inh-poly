@@ -28,5 +28,10 @@ namespace Vehicles
                 Console.WriteLine($"{message}{((EngineType.Horsepower * fuelMod) * Math.Exp(Math.Sqrt(i)) / 2):F2}mph");
             }
         }
+
+        public override void SwapEngine(int horsepower, FuelType fuelType)
+        {
+            EngineType = new CarEngine(horsepower, fuelType);
+        }
     }
 }

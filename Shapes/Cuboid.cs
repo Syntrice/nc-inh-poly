@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Cuboid : Shape3D
+    public class Cuboid : Shape3D
     {
         public double Height {  get; set; }
 

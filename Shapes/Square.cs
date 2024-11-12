@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Square : Rectangle
+    public class Square : Rectangle
     {
         public double Size { get; set; }
         public Square(double size) : base(size, size)

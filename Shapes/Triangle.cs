@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Triangle : Shape
+    public class Triangle : Shape
     {
 
         public double BaseLength { get; set; }

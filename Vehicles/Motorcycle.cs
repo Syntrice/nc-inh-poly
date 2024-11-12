@@ -31,5 +31,9 @@ namespace Vehicles
             }
         }
 
+        public override void SwapEngine(int horsepower, FuelType fuelType)
+        {
+            EngineType = new MotorcycleEngine(horsepower, fuelType);
+        }
     }
 }

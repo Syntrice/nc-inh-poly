@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Sphere : Shape3D
+    public class Sphere : Shape3D
     {
 
         public Sphere(Circle circle) : base(circle)

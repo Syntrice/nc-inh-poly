@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Prism : Shape3D
+    public class Prism : Shape3D
     {
         public double Height { get; set; }
 
-        public Prism(Triangle triangle, double height) : base(triangle)
+        // update to use any base shape
+        public Prism(Triangle triangle, double height) : base(triangle) 
         {
             Height = height;    
         }

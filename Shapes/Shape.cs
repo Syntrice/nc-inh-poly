@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal abstract class Shape
+    public abstract class Shape
     {
         public abstract double CalculateArea();
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Rhombohedron : Shape3D
+    public class Rhombohedron : Shape3D
     {
         public double Height { get; }
         public Rhombohedron(Rhombus rhombus, double height) : base(rhombus)

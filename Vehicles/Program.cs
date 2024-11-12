@@ -6,17 +6,26 @@
         {
             Car redCar = new Car("Fast 500", "Carmaker Company");
             Car siestaFord = new Car("Siesta", "Ford");
-            Motorcycle bicycle = new Motorcycle("Trike", "Bike Co. Ltd", true);
 
+            Motorcycle bicycle1 = new Motorcycle("Trike", "Bike Co. Ltd", true);
+            Motorcycle bicycle2 = new Motorcycle("Trike", "Bike Co. Ltd", true);
 
-            redCar.StartEngine();
-            redCar.Drive();
+            bicycle2.SwapEngine(500, FuelType.Diesel);
 
-            siestaFord.StartEngine();
-            siestaFord.Drive();
+            bicycle1.StartEngine();
+            bicycle2.StartEngine();
 
-            bicycle.StartEngine();
-            bicycle.Drive();    
+            bicycle1.Drive();
+            bicycle2.Drive();
+
+            //redCar.StartEngine();
+            //redCar.Drive();
+
+            //siestaFord.StartEngine();
+            //siestaFord.Drive();
+
+            //bicycle.StartEngine();
+            //bicycle.Drive();    
 
         }
     }
