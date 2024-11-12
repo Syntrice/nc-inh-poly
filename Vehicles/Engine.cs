@@ -17,6 +17,11 @@ namespace Vehicles
             Horsepower = horsepower;
             FuelType = fuelType;
         }
+
+        public void Start()
+        {
+            Running = true;
+        }
     }
 
     public enum FuelType

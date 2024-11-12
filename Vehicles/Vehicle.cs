@@ -8,7 +8,7 @@ namespace Vehicles
 {
     internal abstract class Vehicle
     {
-        Engine EngineType {  get; set; }
+        public Engine EngineType {  get; set; }
 
         public string MakeName { get; set; }
         public string Model {  get; set; }
@@ -20,6 +20,26 @@ namespace Vehicles
             MakeName = makeName;
             EngineType = engineType;
         }
+
+        public void StartEngine()
+        {
+            EngineType.Start();
+        }
+
+        public void Drive()
+        {
+            if (EngineType.Running)
+            {
+                Accelerate();
+            }
+            else
+            {
+                Console.WriteLine($"{MakeName} {Model} is not running.");
+            }
+        }
+
+        public abstract void Accelerate();
+
 
     }
 }
